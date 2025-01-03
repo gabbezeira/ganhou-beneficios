@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import '@globalStyles'
 
 export const ModalStyled = styled.div`
   position: fixed;
@@ -13,7 +12,7 @@ export const ModalStyled = styled.div`
   align-items: center;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1000;
 
   &.show {
@@ -31,9 +30,9 @@ export const ModalStyled = styled.div`
     border-radius: 0.5rem;
     width: auto;
     height: auto;
-    transform: scale(0.8);
+    transform: scale(0.95);
     opacity: 0;
-    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+    transition: all 0.15s;
 
     &.show {
       transform: scale(1);

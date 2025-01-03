@@ -9,6 +9,7 @@ export default defineConfig({
 		alias: {
 			'@': path.resolve(__dirname, 'src/'),
 			'@globalStyles': path.resolve(__dirname, 'src/styles/globalStyles.css'),
+			'@globalStylesJSX': path.resolve(__dirname, 'src/styles/styles.jsx'),
 			'@atoms': path.resolve(__dirname, 'src/components/atoms'),
 			'@molecules': path.resolve(__dirname, 'src/components/molecules'),
 			'@organisms': path.resolve(__dirname, 'src/components/organisms'),

@@ -1,8 +1,9 @@
 import { Button, Logo } from '@atoms'
-import { CreateCampainModal } from '@molecules'
-import { Modal } from '@organisms'
+import { CreateCampainModal } from '@organisms'
+import { Modal } from '@templates'
 import { LogOut, BookmarkPlus as PlusCampain } from 'lucide-react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { StyledMenu } from './Menu.styles'
 
 export function Menu() {
@@ -19,10 +20,12 @@ export function Menu() {
 					<PlusCampain className="buttonIcon" />
 					<span className="buttonText">Nova campanha</span>
 				</Button>
-				<Button variant="outline" fontWeight="500">
-					<LogOut className="buttonIcon" />
-					<span className="buttonText">Sair</span>
-				</Button>
+				<Link className="link-router-dom" to="/login">
+					<Button variant="outline" fontWeight="500">
+						<LogOut className="buttonIcon" />
+						<span className="buttonText">Sair</span>
+					</Button>
+				</Link>
 			</div>
 
 			{isModalOpen && (

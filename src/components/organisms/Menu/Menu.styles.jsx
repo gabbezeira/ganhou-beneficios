@@ -19,6 +19,10 @@ export const StyledMenu = styled.div`
     align-items: center;
     gap: 0.625rem;
 
+    .link-router-dom {
+      text-decoration: none;
+    }
+
     .buttonText{
       display: block;
     }

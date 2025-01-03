@@ -17,7 +17,6 @@ export const StyledButton = styled.button`
   font-weight: ${({ $fontWeight }) => $fontWeight || '500'};
 
   border-radius: ${({ $borderRadius }) => $borderRadius || '0.5rem'};;
-  box-sizing: border-box;
   transition: all 0.2s;
   cursor: pointer;
 
@@ -33,7 +32,7 @@ export const StyledButton = styled.button`
 		$variant === 'primary' &&
 		css`
     background-color: var(--primary);
-    border: none;
+    border: 1px solid var(--primary);
     color: var(--white);
 
     &:hover {

@@ -1,10 +1,24 @@
 import { Button, Input, Title } from '@atoms'
 import { Question, TextBlock } from '@molecules'
 import { MessageSquarePlus, BookmarkPlus as PlusCampain } from 'lucide-react'
+import { useState } from 'react'
 import { StyledCreateCampainModal } from './CreateCampainModal.styles'
 
 export const CreateCampainModal = () => {
-	const questions = [1, 2, 3, 4]
+	const [questions, setQuestions] = useState([])
+
+	const addQuestion = () => {
+		const newQuestion = {
+			id: Date.now(),
+			text: '',
+		}
+		setQuestions([...questions, newQuestion])
+	}
+
+	const removeQuestion = (id) => {
+		setQuestions(questions.filter((question) => question.id !== id))
+	}
+
 	return (
 		<StyledCreateCampainModal>
 			<TextBlock
@@ -30,7 +44,7 @@ export const CreateCampainModal = () => {
 						placeholder="Digite o nome da campanha"
 						inputWidth="60%"
 						borderRadius="0.25rem"
-						borderSize="1px"
+						borderSize="0.5px"
 						inputHeight="3.125rem"
 					/>
 					<Input
@@ -39,7 +53,7 @@ export const CreateCampainModal = () => {
 						placeholder="Digite o identificador da campanha"
 						inputWidth="40%"
 						borderRadius="0.25rem"
-						borderSize="1px"
+						borderSize="0.5px"
 						inputHeight="3.125rem"
 					/>
 				</div>
@@ -54,6 +68,7 @@ export const CreateCampainModal = () => {
 						fontWeight="500"
 						borderRadius="0.25rem"
 						height="2.5rem"
+						onClick={addQuestion}
 					>
 						<MessageSquarePlus className="buttonIcon" />
 						<span>Nova pergunta</span>
@@ -61,9 +76,13 @@ export const CreateCampainModal = () => {
 				</div>
 
 				<div className="questions">
-					{questions.map((_, index) => (
-						// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-						<Question key={index} index={index} />
+					{questions.map((question, index) => (
+						<Question
+							key={question.id}
+							index={index}
+							id={question.id}
+							trashOnClick={removeQuestion}
+						/>
 					))}
 				</div>
 

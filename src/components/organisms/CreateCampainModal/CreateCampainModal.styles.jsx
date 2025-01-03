@@ -7,7 +7,7 @@ export const StyledCreateCampainModal = styled.div`
   flex-direction: column;
   align-items: center;
 
-  width: auto;
+  width: 51rem;
   height: auto;
   gap: 2rem;
 
