@@ -13,7 +13,11 @@ export const Body = styled.div`
   flex-direction: column;
   flex-grow: 1;
 
-  padding: 0rem 10rem;
+  padding: 5rem 10rem;
+
+  width: 100%;
+  min-height: 0;
+  height: 100%;
 
   @media (max-width: 640px) {
     align-items: center;

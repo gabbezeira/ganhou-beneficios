@@ -1,13 +1,15 @@
 import { Body, PageWrapper } from '@globalStylesJSX'
-import { Empty } from '@molecules'
+import { CampainCard, Empty } from '@molecules'
+import { Campains } from '@organisms'
 import { Menu } from '@organisms'
+import { Home } from './components/pages/Home/Home'
 
 function App() {
 	return (
 		<PageWrapper>
 			<Menu />
 			<Body>
-				<Empty />
+				<Home />
 			</Body>
 		</PageWrapper>
 	)

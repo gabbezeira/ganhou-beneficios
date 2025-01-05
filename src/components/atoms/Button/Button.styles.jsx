@@ -66,6 +66,18 @@ export const StyledButton = styled.button`
     }
   `}
 
+  ${({ $variant }) =>
+		$variant === 'lightblue' &&
+		css`
+    background-color: var(--light-blue);
+    padding: 0.875rem !important;
+    border: none;
+    color: var(--white);
+
+    &:hover {
+      background-color: var(--light-blue);
+    }
+  `}
   @media (max-width: 768px) {
     padding: 0.625rem;
   }

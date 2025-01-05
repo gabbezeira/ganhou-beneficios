@@ -1,0 +1,110 @@
+[
+	{
+		"description": "Concorra a uma consulta gratuita no oftalmologista! 😎",
+		"idCampain": "QÓculos#1",
+		"leads": [
+			{
+				"lead": {
+					"name": "João Silva",
+					"email": "joao.silva@example.com",
+					"phone": "(11) 91234-5678"
+				}
+			},
+			{
+				"lead": {
+					"name": "Maria Oliveira",
+					"email": "maria.oliveira@example.com",
+					"phone": "(21) 99876-5432"
+				}
+			},
+			{
+				"lead": {
+					"name": "Carlos Santos",
+					"email": "carlos.santos@example.com",
+					"phone": "(31) 98765-4321"
+				}
+			}
+		]
+	},
+	{
+		"description": "Responda o questionário e ganhe 20% de desconto na troca da película do seu celular! 📱",
+		"idCampain": "Ducks#1",
+		"leads": [
+			{
+				"lead": {
+					"name": "Maria Oliveira",
+					"email": "maria.oliveira@example.com",
+					"phone": "(21) 99876-5432"
+				}
+			},
+			{
+				"lead": {
+					"name": "Carlos Santos",
+					"email": "carlos.santos@example.com",
+					"phone": "(31) 98765-4321"
+				}
+			}
+		]
+	},
+	{
+		"description": "Responda e ganhe 15% na troca do seu óculos de grau! 👓",
+		"idCampain": "QÓculos#3",
+		"leads": [
+			{
+				"lead": {
+					"name": "João Silva",
+					"email": "joao.silva@example.com",
+					"phone": "(11) 91234-5678"
+				}
+			},
+			{
+				"lead": {
+					"name": "Maria Oliveira",
+					"email": "maria.oliveira@example.com",
+					"phone": "(21) 99876-5432"
+				}
+			},
+			{
+				"lead": {
+					"name": "Carlos Santos",
+					"email": "carlos.santos@example.com",
+					"phone": "(31) 98765-4321"
+				}
+			}
+		]
+	},
+	{
+		"description": "Teste",
+		"idCampain": "QÓculos#4",
+		"leads": [
+			{
+				"lead": {
+					"name": "João Silva",
+					"email": "joao.silva@example.com",
+					"phone": "(11) 91234-5678"
+				}
+			},
+			{
+				"lead": {
+					"name": "João Silva",
+					"email": "joao.silva@example.com",
+					"phone": "(11) 91234-5678"
+				}
+			},
+			{
+				"lead": {
+					"name": "Maria Oliveira",
+					"email": "maria.oliveira@example.com",
+					"phone": "(21) 99876-5432"
+				}
+			},
+			{
+				"lead": {
+					"name": "Carlos Santos",
+					"email": "carlos.santos@example.com",
+					"phone": "(31) 98765-4321"
+				}
+			}
+		]
+	}
+]
