@@ -9,6 +9,10 @@ export const StyledHome = styled.div`
 
   height: 100%;
   flex-grow: 1;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 export const CampainsHome = styled.div`

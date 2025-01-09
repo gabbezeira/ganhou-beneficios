@@ -19,7 +19,8 @@ export const Body = styled.div`
   min-height: 0;
   height: 100%;
 
-  @media (max-width: 640px) {
+  @media (max-width: 768px) {
     align-items: center;
+    padding: 5rem 1.25rem;
   }
 `
